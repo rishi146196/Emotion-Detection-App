@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Prediction</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Emotion Prediction</h1>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" name="file" accept="image/*" required>
+        <button type="submit">Predict Emotion</button>
+    </form>
+    <div class="preview">
+        <h2>Image Preview</h2>
+        <img id="previewImg" src="#" alt="Image Preview" style="display: none;">
+    </div>
+    <div class="result">
+        <p id="emotionResult" style="display: none;"></p>
+    </div>
+
+    <script src="/static/script/scripts.js"></script>
+</body>
+</html>
